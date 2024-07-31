@@ -5,8 +5,7 @@ import AgoraRTC from "agora-rtc-sdk-ng";
 import Message from "../src/components/Message"
 const App: React.FunctionComponent = () => {
   const [videocall, setVideocall] = useState(false);
-  const [isHost, setHost] = useState(true);
-  const [isPinned, setPinned] = useState(false);
+
   const [username, setUsername] = useState("");
   const [screenSharing, setScreenSharing] = useState(false);
   const [client] = useState(() =>
