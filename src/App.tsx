@@ -68,15 +68,7 @@ const App: React.FunctionComponent = () => {
         {videocall ? (
           <>
             <div style={styles.nav}>
-              <p style={{ fontSize: 20, width: 200 }}>
-                You're {isHost ? "a host" : "an audience"}
-              </p>
-              {/* <p style={styles.btn} onClick={() => setHost(!isHost)}>
-                Change Role
-              </p> */}
-              {/* <p style={styles.btn} onClick={() => setPinned(!isPinned)}>
-                Change Layout
-              </p> */}
+        
               <p style={styles.btn} onClick={handleScreenShare}>
                 {screenSharing ? "Stop Screen Share" : "Start Screen Share"}
               </p>
@@ -87,8 +79,8 @@ const App: React.FunctionComponent = () => {
                   appId: 'f13fcfbd9cc84e6cb286d00641cbba21',
                   channel: 'webapp',
                   token: '007eJxTYDgWpndhg35VuKmd03sPqc0TC24s6VT+U6T4+mVGzxmtqfUKDGmGxmnJaUkplsnJFiapZslJRhZmKQYGZiaGyUlJiUaGyedWpjUEMjKYnYtgZmRgZGABYhCfCUwyg0kWMMnGUJ6alFhQwMAAADdxJBA=',
-                  role: isHost ? 'host' : 'audience',
-                  layout: isPinned ? layout.pin : layout.grid,
+                  // role: isHost ? 'host' : 'audience',
+                  // layout: isPinned ? layout.pin : layout.grid,
                 }}
                 rtmProps={{ username: username || 'user', displayUsername: true }}
                 callbacks={{
